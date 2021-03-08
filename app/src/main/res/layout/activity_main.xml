@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="1" >
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="5dp" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Contact Info"
+            android:background="@android:color/holo_blue_bright"
+            android:gravity="center"
+            android:textSize="24sp"/>
+
+        <EditText
+            android:id="@+id/nameEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="name"
+            android:imeOptions="actionNext"
+            android:inputType="textPersonName|textCapWords" >
+        </EditText>
+
+        <EditText
+            android:id="@+id/phoneEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="phone"
+            android:imeOptions="actionNext"
+            android:inputType="phone" >
+        </EditText>
+
+        <EditText
+            android:id="@+id/emailEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="email"
+            android:imeOptions="actionNext"
+            android:inputType="textEmailAddress" >
+        </EditText>
+
+        <EditText
+            android:id="@+id/streetEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="street"
+            android:imeOptions="actionNext"
+            android:inputType="textPostalAddress|textCapWords" >
+        </EditText>
+
+        <EditText
+            android:id="@+id/cityEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="city"
+            android:imeOptions="actionDone"
+            android:inputType="textPostalAddress|textCapWords" >
+        </EditText>
+
+        <ImageView
+            android:id="@+id/contactImgView"
+            android:layout_width="120dp"
+            android:layout_height="90dp"
+            android:layout_gravity="center"
+            android:onClick="imgClickHandler"
+            android:src="@drawable/contact" />
+
+        <Button
+            android:id="@+id/saveContactButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="15dp"
+            android:onClick="saveContactButtonListener"
+            android:text="save">
+
+        </Button>
+
+        <Button
+            android:id="@+id/buttonSaveWithImage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="buttonSaveWithImageListener"
+            android:text="Save With Image" />
+
+        <Button
+            android:id="@+id/displayContactsButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="displayContactButtonListener"
+            android:text="Display Contacts" />
+
+
+    </LinearLayout>
+
+
+</ScrollView>
